@@ -1,7 +1,7 @@
 let pets = [
-  { name: "Max", type: "dog", bornOn: 2018 },
-  { name: "Angel", type: "cat", bornOn: 2015 },
-  { name: "Jasper", type: "dog", bornOn: 2016 }
+  { name: `Max`, type: `dog`, bornOn: 2018 },
+  { name: `Angel`, type: `cat`, bornOn: 2015 },
+  { name: `Jasper`, type: `dog`, bornOn: 2016 }
 ];
 console.log(pets)
 
@@ -45,7 +45,7 @@ for (var i = 0; i < pets.length; i++) {
   }
 }*/
 
-console.log(pets.filter(pet=>pet.type=="dog"));
+console.log(pets.filter(pet=>pet.type==`dog`));
 
 //3//
 
@@ -60,6 +60,6 @@ console.log(pets.filter(pet=>pet.type=="dog"));
 
 
 let jasper;
-pets.forEach(pet =>pet.name =="Jasper" ? jasper=pet : jasper="" )
+pets.forEach(pet =>pet.name ==`Jasper`? jasper=pet : jasper=`` )
 console.log(`Jasper is ${jasper.age} years old`);
 //4//
